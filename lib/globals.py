@@ -4,8 +4,8 @@ import os
 MYDIR = os.path.abspath(os.path.dirname( os.path.dirname('__file__') ))
 
 GEOLITE = os.path.join( MYDIR, "GeoLite2-City.mmdb" )
-WEGO = "/home/igor/go/bin/we-lang"
-PYPHOON = "/home/igor/wttr.in/pyphoon/bin/pyphoon-lolcat"
+WEGO = os.path.expanduser("~/go/bin/we-lang")
+PYPHOON = os.path.expanduser("~/wttr.in/pyphoon/bin/pyphoon-lolcat")
 
 CACHEDIR  = os.path.join( MYDIR, "cache" )
 IP2LCACHE = os.path.join( MYDIR, "cache/ip2l" )

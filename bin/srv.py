@@ -9,7 +9,7 @@ import geoip2.database
 from geopy.geocoders import Nominatim
 import jinja2
 
-from gevent.wsgi import WSGIServer
+from gevent.pywsgi import WSGIServer
 from gevent.monkey import patch_all
 from gevent.subprocess import Popen, PIPE
 patch_all()
